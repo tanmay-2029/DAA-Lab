@@ -1,25 +1,19 @@
-/*
- * Name: Alex Chen
- * Roll No: 10240391
- * Lab Assignment 5: Partition Point Search (Linear vs Binary Search)
- */
-
 #include <stdio.h>
 #include <stdlib.h>
 
-// Linear scan method: O(n)
+// linear scan method: O(n)
 int linearSearch(int arr[], int n, long *count) {
     *count = 0;
     for (int i = 0; i < n; i++) {
         (*count)++;
         if (arr[i] == 1) {
-            return i; // found first 1
+            return i; //found first 1
         }
     }
-    return n; // no 1 found
+    return n; //no 1 found
 }
 
-// Binary search method: O(log n)
+// binary search method: O(log n)
 int binarySearch(int arr[], int n, long *count) {
     *count = 0;
     int low = 0;
@@ -52,7 +46,7 @@ void makeArray(int arr[], int n, int k) {
 int main() {
     printf("=== Lab 5: Partition Point Search ===\n\n");
 
-    // Demo example
+    // sample example
     int demoArr[] = {0, 0, 0, 0, 0, 1, 1, 1};
     int demoSize = 8;
     long cLinear, cBinary;
@@ -64,7 +58,7 @@ int main() {
     printf("Linear search found index %d using %ld comparisons\n", pos1, cLinear);
     printf("Binary search found index %d using %ld comparisons\n\n", pos2, cBinary);
 
-    // Save comparison data to CSV file
+    // save comparison data to csv file
     FILE *fp = fopen("partition_point_comparisons.csv", "w");
     fprintf(fp, "n,linear_comparisons,binary_comparisons\n");
 
