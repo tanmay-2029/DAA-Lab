@@ -1,19 +1,12 @@
-/*
- * Name: Alex Chen
- * Roll No: 10240391
- * Lab Assignment 6: Element Uniqueness Analysis
- */
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
-// Comparator for qsort
 int compareInts(const void *a, const void *b) {
     return (*(int *)a - *(int *)b);
 }
 
-// Brute force check: compares every pair
+//brute force check
 int checkBruteForce(int arr[], int n, long *count) {
     *count = 0;
     for (int i = 0; i < n; i++) {
@@ -24,10 +17,10 @@ int checkBruteForce(int arr[], int n, long *count) {
             }
         }
     }
-    return 0; // all unique
+    return 0;
 }
 
-// Sort then check adjacent elements
+// sort then check adjacent elements
 int checkSorted(int arr[], int n) {
     int *temp = (int*)malloc(n * sizeof(int));
     for (int i = 0; i < n; i++) {
@@ -49,7 +42,7 @@ int checkSorted(int arr[], int n) {
     return foundDuplicate;
 }
 
-// Fill array with unique numbers and shuffle
+//fill array with unique numbers and shuffle
 void createUniqueArray(int arr[], int n) {
     for (int i = 0; i < n; i++) {
         arr[i] = i;
@@ -68,7 +61,7 @@ int main() {
 
     printf("=== Lab 6: Element Uniqueness Analysis ===\n\n");
 
-    // Demo with small array
+    //demo with small array
     int demo[] = {4, 2, 7, 1, 9, 4, 6};
     int demoSize = 7;
     long demoComps = 0;
@@ -109,7 +102,7 @@ int main() {
     }
 
     fclose(fp);
-    printf("\nData saved to uniqueness_timing.csv successfully!\n");
+    printf("\nData saved to uniqueness_timing.csv successfully\n");
 
     return 0;
 }
