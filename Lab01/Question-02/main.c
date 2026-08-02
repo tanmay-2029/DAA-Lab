@@ -1,23 +1,16 @@
-// coin sim - fair vs biased
-// compile: gcc -O3 coin.c -o coin
-// run: ./coin [tosses] [bias]
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
 int flip(double p) {
     double r = (double)rand() / RAND_MAX;
-    return (r < p) ? 1 : 0;
+    return (r<p)?1:0;
 }
 
 void simulate(const char *name, double prob, long tosses, const char *filename) {
     long heads = 0;
-    FILE *f = fopen(filename, "w");
-    if (!f) {
-        printf("error opening %s\n", filename);
-        return;
-    }
+    FILE *f = fopen("fair_coin.csv", "w");
+    if(f==NULL) f=stdout;
 
     fprintf(f, "toss,p_head\n");
 
