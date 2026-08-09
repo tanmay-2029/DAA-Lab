@@ -5,7 +5,7 @@
 **Date:** July 28, 2026
 
 This repository contains C implementations, Python plotting scripts, and
-result graphs for all 6 questions of DAA Lab-01.
+result graphs for all 6 questions of DAA Lab.
 
 Each question's `.c` program, when run, also writes a `.csv` file with the
 raw data it collected; the matching `plot_*.py` script reads that CSV and
