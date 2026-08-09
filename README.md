@@ -36,12 +36,3 @@ python3 plot_bubble.py
 ```
 
 ---
-
-## Q1 — Put them in Order
-## Q2 — Fair vs Biased coin
-## Q3 — Performance analysis of bubble sort
-## Q4 — Towers of Hanoi
-## Q5 — Find the partition point
-## Q6 — Element uniqueness## Author
-
-Prepared for DAA Lab-01 submission (BTech CS-B / CSE, 3rd Semester).
