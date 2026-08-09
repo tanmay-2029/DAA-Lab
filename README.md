@@ -2,7 +2,6 @@
 
 **Course:** BTech (CS-B and CE), 3rd Semester
 **Instructor:** Dr. Ajaya Kumar Dash
-**Date:** July 28, 2026
 
 This repository contains C implementations, Python plotting scripts, and
 result graphs for all 6 questions of DAA Lab.
