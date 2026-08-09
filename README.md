@@ -1,4 +1,4 @@
-# Design and Analysis of Algorithms (DAA) — Lab 01
+# Design and Analysis of Algorithms (DAA) — Lab
 
 **Course:** BTech (CS-B and CE), 3rd Semester
 **Instructor:** Dr. Ajaya Kumar Dash
