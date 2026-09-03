@@ -1,6 +1,6 @@
 # Design and Analysis of Algorithms (DAA) — Lab
 
-**Course:** BTech (CS-B and CE), 3rd Semester
+**Course:** BTech (CSE-B), 3rd Semester
 **Instructor:** Dr. Ajaya Kumar Dash
 
 This repository contains C implementations, Python plotting scripts, and
